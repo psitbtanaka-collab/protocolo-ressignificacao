@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo de Ressignificação - Transforme Sua Mente e Sua Vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset e estilos base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+        .btn {
+            display: inline-block;
+            background: #ff6b6b;
+            color: white;
+            padding: 18px 40px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(255,107,107,0.4);
+        }
+        .hero-video {
+            width: 100%;
+            max-width: 800px;
+            height: 400px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 20px;
+            margin: 40px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        /* Problem Section */
+        .problem {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        .problem h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            color: #333;
+        }
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .problem-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .problem-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+        /* Solution Section */
+        .solution {
+            padding: 100px 0;
+            background: white;
+        }
+        .solution h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+        .solution-content img {
+            width: 100%;
+            border-radius: 20px;
+        }
+        /* Value Stack */
+        .value-stack {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+        }
+        .value-stack h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .values-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .value-item {
+            background: rgba(255,255,255,0.2);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+        /* Social Proof */
+        .social-proof {
+            padding: 100px 0;
+            background: #f8f9fa;
+        }
+        .social-proof h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+        .testimonial {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        /* Guarantee */
+        .guarantee {
+            padding: 100px 0;
+            background: #4ecdc4;
+            color: white;
+            text-align: center;
+        }
+        .guarantee h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .guarantee-badge {
+            background: white;
+            color: #4ecdc4;
+            padding: 20px 40px;
+            border-radius: 50px;
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin: 40px 0;
+        }
+        /* Urgency */
+        .urgency {
+            padding: 100px 0;
+            background: #ff4757;
+            color: white;
+            text-align: center;
+        }
+        .urgency h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .countdown {
+            font-size: 2rem;
+            margin: 40px 0;
+        }
+        /* FAQ */
+        .faq {
+            padding: 100px 0;
+            background: white;
+        }
+        .faq h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+        }
+        .faq-item {
+            margin-bottom: 30px;
+        }
+        .faq-question {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            cursor: pointer;
+        }
+        .faq-answer {
+            display: none;
+        }
+        /* Final CTA */
+        .final-cta {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+        }
+        .final-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero p { font-size: 1.2rem; }
+            .solution-content { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Seção Hero: Apresentação principal com chamada para ação -->
+    <section class="hero">
+        <div class="container">
+            <h1>Protocolo de Ressignificação</h1>
+            <p>Transforme crenças limitantes em poder ilimitado e atraia a vida dos seus sonhos em apenas 21 dias.</p>
+            <a href="#comprar" class="btn">Acessar o Protocolo Agora</a>
+            <!-- Placeholder para vídeo explicativo -->
+            <div class="hero-video">
+                [Vídeo Hero Placeholder - Insira seu vídeo aqui]
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Problema: Identifica as dores do público -->
+    <section class="problem">
+        <div class="container">
+            <h2>Você Está Preso Nesses Problemas?</h2>
+            <div class="problems-grid">
+                <div class="problem-card">
+                    <img src="https://via.placeholder.com/80?text=😰" alt="Ansiedade">
+                    <h3>Ansiedade Constante</h3>
+                    <p>Sente que a mente não para e o futuro te assusta?</p>
+                </div>
+                <div class="problem-card">
+                    <img src="https://via.placeholder.com/80?text=⏳" alt="Procrastinação">
+                    <h3>Procrastinação Crônica</h3>
+                    <p>Adia sonhos por medo do fracasso?</p>
+                </div>
+                <div class="problem-card">
+                    <img src="https://via.placeholder.com/80?text=💔" alt="Autoestima Baixa">
+                    <h3>Autoestima Baixa</h3>
+                    <p>Não se sente merecedor de abundância?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Solução: Apresenta o produto como solução -->
+    <section class="solution">
+        <div class="container">
+            <h2>A Solução Definitiva: Protocolo de Ressignificação</h2>
+            <div class="solution-content">
+                <div>
+                    <h3>Um Método Científico e Simples</h3>
+                    <p>Baseado em neurociência e psicologia positiva, o Protocolo te guia passo a passo para ressignificar crenças profundas, liberando bloqueios emocionais e reprogramando sua mente para o sucesso.</p>
+                    <ul>
+                        <li>21 dias de áudios guiados</li>
+                        <li>Exercícios diários práticos</li>
+                        <li>Acompanhamento exclusivo</li>
+                    </ul>
+                    <a href="#comprar" class="btn">Começar Agora</a>
+                </div>
+                <img src="https://via.placeholder.com/600x400?text=Protocolo+de+Ressignificação" alt="Imagem do Protocolo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Value Stack: Pilha de valores/benefícios -->
+    <section class="value-stack">
+        <div class="container">
+            <h2>O Que Você Vai Ganhar</h2>
+            <div class="values-list">
+                <div class="value-item">
+                    <h4>✨ Paz Interior</h4>
+                    <p>Elimine ansiedade e viva no presente.</p>
+                </div>
+                <div class="value-item">
+                    <h4>🚀 Produtividade Máxima</h4>
+                    <p>Supere procrastinação e realize sonhos.</p>
+                </div>
+                <div class="value-item">
+                    <h4>💰 Abundância Financeira</h4>
+                    <p>Atraia prosperidade com nova mentalidade.</p>
+                </div>
+                <div class="value-item">
+                    <h4>❤️ Relacionamentos Saudáveis</h4>
+                    <p>Atraia pessoas e oportunidades certas.</p>
+                </div>
+                <div class="value-item">
+                    <h4>🌟 Autoestima Inabalável</h4>
+                    <p>Sinta-se confiante e poderoso todos os dias.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Social Proof: Provas sociais com depoimentos -->
+    <section class="social-proof">
+        <div class="container">
+            <h2>Resultados Reais de Alunos</h2>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Mudei completamente minha vida! Sai da depressão para uma promoção no trabalho em 1 mês."</p>
+                    <h4>- Maria Silva</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"O Protocolo ressignificou minhas crenças sobre dinheiro. Hoje faturei 3x mais!"</p>
+                    <h4>- João Santos</h4>
+                </div>
+                <div class="testimonial">
+                    <div class="stars">★★★★★</div>
+                    <p>"Finalmente paz mental. Recomendo para todos!"</p>
+                    <h4>- Ana Oliveira</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Garantia: Reduz objeções com garantia -->
+    <section class="guarantee">
+        <div class="container">
+            <h2>Garantia Incondicional de 30 Dias</h2>
+            <p>Se não transformar sua vida em 30 dias, devolvemos 100% do seu dinheiro. Sem perguntas!</p>
+            <div class="guarantee-badge">✅ Garantia Total ou Seu Dinheiro de Volta</div>
+        </div>
+    </section>
+
+    <!-- Seção Urgency: Cria urgência com escassez -->
+    <section class="urgency">
+        <div class="container">
+            <h2>Oferta por Tempo Limitado</h2>
+            <p>Preço promocional de R$ 197 por apenas mais algumas horas!</p>
+            <div class="countdown">
+                [Countdown Placeholder - 00:00:00]
+            </div>
+            <a href="#comprar" class="btn">Garantir Minha Vaga Agora</a>
+        </div>
+    </section>
+
+    <!-- Seção FAQ: Responde objeções comuns -->
+    <section class="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="faq-item">
+                <div class="faq-question">O que é o Protocolo de Ressignificação?</div>
+                <div class="faq-answer">
+                    <p>É um programa de 21 dias com técnicas para reprogramar crenças limitantes.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Preciso de experiência prévia?</div>
+                <div class="faq-answer">
+                    <p>Não! É para iniciantes, com tudo explicado passo a passo.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Como acesso o conteúdo?</div>
+                <div class="faq-answer">
+                    <p>Área de membros online, acessível 24/7 pelo celular ou computador.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Funciona para todos?</div>
+                <div class="faq-answer">
+                    <p>Sim! Milhares de alunos de todas as idades transformaram suas vidas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Final CTA: Chamada final para ação -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>Última Chance: Transforme Sua Vida Hoje!</h2>
+            <p>Não perca essa oportunidade única. Clique abaixo e comece agora.</p>
+            <a href="#comprar" class="btn" id="comprar">Comprar Agora por R$197</a>
+        </div>
+    </section>
+
+    <script>
+        // Script simples para FAQ accordion (opcional)
+        document.querySelectorAll('.faq-question').forEach(q => {
+            q.addEventListener('click', () => {
+                const answer = q.nextElementSibling;
+                answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+            });
+        });
+    </script>
+</body>
+</html>
